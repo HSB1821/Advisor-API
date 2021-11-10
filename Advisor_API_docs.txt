@@ -1,0 +1,144 @@
+NurtureLabs Assignment
+If you wish to be notified of more roles opening up at Nurture Labs please join this google
+group
+Backend Assignment (Python)
+1. Make APIs using Django (or any other Python-based Web framework) for an advisor
+network where users can come and book an advisor for a call.
+a. The following roles should be allowed
+i. Admin
+1. API: Add an advisor
+a. Method:
+i. POST
+b. Authentication
+i. Not needed for this assignment
+c. Endpoint:
+i. /admin/advisor/
+d. Request:
+i. Advisor name
+ii. Advisor Photo URL
+e. Response:
+i. No Response
+ii. Just return 200_OK if the request is successful
+iii. Return 400_BAD_REQUEST if any of the above
+fields are missing
+ii. User
+1. API: Can register as a user
+a. Method:
+i. POST
+b. Endpoint:
+i. /user/register/
+c. Request:
+i. Name
+ii. Email
+iii. Password
+d. Response:
+i. Body:
+1. JWT Authentication Token
+2. User id
+ii. Status
+1. 200_OK if the request is successful
+2. 400_BAD_REQUEST if any of the above
+fields are missing
+2. API: Can log in as a user
+a. Method:
+i. POST
+b. Endpoint:
+i. /user/login/
+c. Request:
+i. Email
+ii. Password
+d. Response:
+i. Body:
+1. JWT Authentication Token
+2. User id
+ii. Status
+1. 200_OK if the request is successful
+2. 400_BAD_REQUEST if any of the above
+fields are missing
+3. Return
+401_AUTHENTICATION_ERROR if the
+email/password combination was wrong
+3. API: Get the list of advisors
+a. Method:
+i. GET
+b. Endpoint:
+i. /user/<user-id>/advisor
+c. Request:
+i. None
+d. Response:
+i. Body:
+1. An array of advisor objects with each
+object having
+a. Advisor Name
+b. Advisor Profile Pic
+c. Advisor Id
+ii. Status
+1. 200_OK if the request is successful
+4. API: Can book call with an advisor
+a. Method:
+i. POST
+b. Endpoint:
+i. /user/<user-id>/advisor/<advisor-id>/
+c. Request:
+i. Booking time (a DateTime string)
+d. Response:
+i. Body:
+1. None
+ii. Status
+1. 200_OK if the request is successful
+5. API: Can get all the booked calls
+a. Method:
+i. GET
+b. Endpoint:
+i. /user/<user-id>/advisor/booking/
+c. Request:
+i. None
+d. Response:
+i. Body:
+1. An array of advisor objects with each
+object having
+a. Advisor Name
+b. Advisor Profile Pic
+c. Advisor Id
+d. Booking time
+e. Booking id
+ii. Status
+1. 200_OK if the request is successful
+b. There is no need to make the UI or any pages for this. We only need the APIs
+to perform the above functions as our internal team is decoupled into backend
+and frontend roles, and you’ll be only working on the backend side
+2. Add the dummy data to test the APIs accordingly
+3. Take the necessary assumptions from your end to complete the above APIs
+4. Put this code in a public repo on Github
+5. Deploy the above-made code base on Heroku on a free tier server
+6. You can test your APIs using Postman
+7. If you don’t know any concept or part of this, try to learn things from the numerous
+tutorials available online. Learning things on the go and just enough to get the job
+done is a highly coveted skill in this industry.
+8. No doubts will be entertained regarding this test. That being said, partial submissions
+are better than no submissions.
+9. Structure your submission like this and send it to tech@nurturelabs.co with the
+subject “Backend Dev Application”.
+a. Your Name
+b. The location you’re currently at
+c. Github link to the code base for this submission
+d. Heroku Deployment Link
+e. Postman link to import collection (optional)
+f. Specify the earliest date you can join if you do get selected. We’ll need you to
+work for at least 9 hrs a day from Monday to Friday, so apply only provided
+you are available for the mentioned number of hours.
+g. Attach your resume(PDF file) or link to your updated LinkedIn profile
+General Advice
+If you think all of this is very daunting or unfair to expect from a fresher please read this.
+We are currently looking for someone who has built at least one small project by themselves
+as a learning exercise. Everything we have asked for is easily available in the form of
+tutorials and Youtube videos. Even if you join a company they'll point you towards those
+resources and ask you to self-learn using them, the only thing extra you’ll have is some
+direction and focus where they’ll tell you exactly what to learn. You can initially find this focus
+by deciding on the path by reading about different technologies and trying out more and
+more mini projects yourself. Please take this decision on your own rather than have
+someone just give you a “job” and decide this for yourself. Your next 30-year career depends
+on it. We are looking for people who have taken the decision to walk on this path and put in
+the effort to teach themselves. It’s never too late to start.
+If you wish to be notified of more roles opening up at Nurture
+Labs please join this google group
