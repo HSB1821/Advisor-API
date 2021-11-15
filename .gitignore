@@ -4,4 +4,5 @@ __pycache__
 drf  
 db.sqlite3  
 /static  
-.DS_Store  
+.DS_Store 
+settings.py 
